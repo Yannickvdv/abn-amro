@@ -50,12 +50,12 @@ As a user, I would like to see the hierarchy of the provided data.
 
 Done | Requirement | Reasoning
 :------------ | :-------------| :-------------|
-:heavy_check_mark: | Clicking one of the nodes displays the detail of that node | The details of a node are shown on top when clicked
-:heavy_check_mark: | Selected node should be visible on the layout | Selected node is indicated by a contrasting colored border
-:heavy_check_mark: | Description and the name should be visible in a sidebar or popup | The description and name are shown as a popup above the chart
-:heavy_check_mark: | Hierarchy should be visible and understandable by the user | Hierachy is visible through a tree structure
-:heavy_check_mark: | Tree layout could be from top to bottom or left to right | Tree layout is vertical (top to bottom). It could be turned horizontal by changing a single variable.
-:heavy_check_mark: | User should be able to deselect a node | User can click the selected node again to deselect it
+:white_check_mark: | Clicking one of the nodes displays the detail of that node | The details of a node are shown on top when clicked
+:white_check_mark: | Selected node should be visible on the layout | Selected node is indicated by a contrasting colored border
+:white_check_mark: | Description and the name should be visible in a sidebar or popup | The description and name are shown as a popup above the chart
+:white_check_mark: | Hierarchy should be visible and understandable by the user | Hierachy is visible through a tree structure
+:white_check_mark: | Tree layout could be from top to bottom or left to right | Tree layout is vertical (top to bottom). It could be turned horizontal by changing a single variable.
+:white_check_mark: | User should be able to deselect a node | User can click the selected node again to deselect it
 
 ## Assumptions
 
