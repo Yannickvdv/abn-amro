@@ -59,4 +59,10 @@ Done | Requirement | Reasoning
 
 ## Assumptions
 
+### Data served with correct hierarchy
+
 The "non-functional requirements" specified that the GET endpoint should "serve the data with the correct hierarchy" (paraphrased). Because this was performed over the weekend, I could not ask for clarification. Given that statement, I assumed it was talking about the JSON object having a structure much like a parent object having children and those children also being able to have children, etc. Because of that, I created the query found in [neo4j_calls.js](./backend/neo4j_calls.js) to do specifically that. This is however not necessarily how Neo4j requests are meant to be used. Normally I would parse the request into the proper format on the frontend, but given this requirement, I felt that it would be a fun challenge to format it before sending. For future projects I would clarify what was meant by "correct hierarchy".
+
+### Inability to serve .env files
+
+Because this project is hosted publicly on a GitHub page, I have to make sure there are no unsecured `.env` variables. My application makes use of an `.env` file to host the environment variables used to connect to the database instance. I imagine that this project might be shared around within ABN-AMRO in order to be reviewed, and I figured the `.env` file could possibly be forgotten in this process. For that reason, I have included a hardcoded JSON response from the backend that is only executed when the environment variables are not defined. This way, the project can still be run without needing an actual connection. Normally this would not be a problem as `.env` variables can be shared personally or saved in the Azure environment.
